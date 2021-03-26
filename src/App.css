@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav{
+  background-color:  red;
+}
+
+header{
+  margin-top: 4rem;
+  color: red;
+}
+.meals{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center; 
+}
+.meal{
+  padding: 20px 5px;
+}
+.searchBar{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+.searchForm{
+  display: flex;
+  align-items: center;
+}
+.searchForm .btn{
+  margin-left: 2rem;
+  color: #000;
+  font-weight: 600;
+}
+.meal img{
+  width: 300px;
+  height: 300px;
+}
+.meal .btn{
+  float: right;
+}
