@@ -1,7 +1,7 @@
 import axios from 'axios';
-import '../index.css';
 import React, {useState, useEffect} from 'react';
-import Meal from './Meal';
+import '../index.css';
+import Meals from './Meals';
 
 const Main = () => {
 
@@ -26,6 +26,8 @@ const Main = () => {
             });
     }
 
+   
+
     const updateSearch = (e) => {
         setSearch(e.target.value);
     }
@@ -46,11 +48,11 @@ const Main = () => {
                 </form>
             </div>
         <div className="meals">
-            
             {meals.map(meal => (
                 <div>
-                    <Meal
+                    <Meals
                         key={meal.idMeal}
+                        mealId={meal.idMeal}
                         image={meal.strMealThumb}
                         title={meal.strMeal}
                         category={meal.strCategory}
