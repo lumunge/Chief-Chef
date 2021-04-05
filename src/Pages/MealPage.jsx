@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Meal from '../Components/Meal';
+import Navbar from '../Components/Navbar';
 
 class MealPage extends React.Component{
     state={
@@ -25,7 +26,8 @@ class MealPage extends React.Component{
     render(){
     const meal = this.state.activeMeal;
     return(
-        <div>
+        <>
+        <Navbar/>
            <div className="meal">
                {meal.map(oneMeal => (
                    <div>
@@ -33,14 +35,14 @@ class MealPage extends React.Component{
                             key={oneMeal.idMeal}
                             title={oneMeal.strMeal}
                             image={oneMeal.strMealThumb}
-                            ingredients={oneMeal.strIngredient1}
+                            ingredients={oneMeal.strIngredient}
                             directions={oneMeal.strInstructions}
                             vidLink={oneMeal.strYoutube}
                        />
                     </div>
                ))}
            </div>
-        </div>
+        </>
       )
 }
 }

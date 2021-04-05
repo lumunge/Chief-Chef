@@ -4,20 +4,19 @@ const Meal = ({title, image, ingredients, directions, vidLink}) => {
 
     return(
         <div className="container">
-            <h2>A Meal Here</h2>
+            <h1>{title}</h1>
         <div className="meal">
-                <h1>{title}</h1>
-                <img src={image} alt={title} />
-                <div className="ingredients">
-                    <ul>
-                       {ingredients}
-                    </ul>
+                <div className="">
+                    <img src={image} alt={title} />
                 </div>
-                <div className="directions">
+                <div className="meal-details">
+                    <ol>
+                        {ingredients}
+                    </ol>
                     <p>{directions}</p>
                 </div>
-                <a href={vidLink}>Video Tutorial</a>
         </div>
+            <a href={vidLink}>Video Tutorial</a>
         </div>
     )
 }

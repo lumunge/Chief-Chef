@@ -6,8 +6,7 @@ const Meals = ({mealId, image, title, origin}) => {
     return(
             <div className="meal">
                 <img className="img-fluid" src={image} alt={title} />
-                <p>{origin} : {title}</p>
-                <p>id: = {mealId} </p>
+                <p>{origin} - {title}</p>
                 <button className="btn btn-outline-primary">
                     <Link to={{
                         pathname: `/meal/:${mealId}`,

@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body{
-  background-image: linear-gradient(120deg, #89f7fe 0%, #66a6ff 100%);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 nav{
   background-color:  red;
@@ -19,10 +19,6 @@ header{
   flex-flow: row wrap;
   justify-content: center;
   align-items: center; 
-}
-.meal{
-  padding: 20px 5px;
-  margin-bottom: 2rem;
 }
 .searchBar{
   display: flex;
@@ -39,6 +35,19 @@ header{
   color: #000;
   font-weight: 600;
 }
+/* sigle-meal styling */
+.meal{
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-around;
+}
+.meal .meal-details{
+  padding-left: 2.5rem;
+  
+}
+.meal h1{
+  text-align: center;
+}
 .meal img{
   width: 300px;
   height: 300px;
@@ -46,3 +55,6 @@ header{
 .meal .btn{
   float: right;
 }
+
+
+/* about section styling */

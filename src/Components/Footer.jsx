@@ -4,7 +4,7 @@ const Footer = () => {
     return(
         <>
          <footer class="footer text-center">
-            <div class="container">
+            <div class="container pt-4">
                 <div class="row">
                     <div class="col-lg-4 mb-5 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Location</h4>
