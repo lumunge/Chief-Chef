@@ -6,19 +6,14 @@
 body{
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
-nav{
-  background-color:  red;
-}
-
 header{
-  margin-top: 4rem;
-  color: red;
+  margin-top: 3rem;
 }
 .meals{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
 }
 .searchBar{
   display: flex;
@@ -37,24 +32,59 @@ header{
 }
 /* sigle-meal styling */
 .meal{
-  margin-top: 5rem;
-  display: flex;
-  justify-content: space-around;
-}
-.meal .meal-details{
-  padding-left: 2.5rem;
-  
-}
-.meal h1{
-  text-align: center;
+  margin: 3rem 10px;
 }
 .meal img{
   width: 300px;
   height: 300px;
 }
-.meal .btn{
+.meal-btn{
   float: right;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  color:   #273746 ;
+}
+.meal-btn:hover{
+  text-decoration: none;
+  background: #f4d03f;
+  transition: all .3s ease;
+  border: none;
 }
 
-
-/* about section styling */
+/* single-meal styling */
+.meal-container{
+  font-family: 'Zilla Slab Highlight', cursive;
+  font-size: 1.2em;
+}
+.meal-container h1{
+  margin-top: 5rem;
+  text-align: center;
+}
+.meal-details{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.meal-img{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 40%;
+}
+.meal-img img{
+  width: 700px;
+  height: 600px;
+}
+.meal-details{
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+}
+.ingredients,
+.directions{
+  padding: 1rem 0;
+  width: 700px;
+  text-align: center;
+}
+/* end single-meal styling */
