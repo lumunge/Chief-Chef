@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 const Meal = ({
     title,
     origin,
@@ -26,6 +27,7 @@ const Meal = ({
     ingredient20,
     directions, 
     vidLink, }) => {
+
 
     return(
         <div className="meal-container container-fluid">
@@ -62,19 +64,13 @@ const Meal = ({
                         <h4>Directions</h4>
                         <p>{directions}</p>
                     </div>
+                    <a href={vidLink} target="_blank" rel="noopener noreferrer">Video Tutorial</a>
                 </div>
         </div>
-        <div className="video-tutorial">
-        <iframe src={vidLink}
-                    frameborder='0'
-                    allow='autoplay; encrypted-media'
-                    allowfullscreen
-                    title='video'
-        />
-        </div>
-            {/* <a href={vidank}>Video Tutorial</a> */}
         </div>
     )
 }
 
 export default Meal;
+
+

@@ -5,7 +5,8 @@ import Navbar from '../Components/Navbar';
 
 class MealPage extends React.Component{
     state={
-        activeMeal: []
+        activeMeal: [],
+        loading: false
     }
 
     componentDidMount = () => {
@@ -15,7 +16,8 @@ class MealPage extends React.Component{
                 const allMeal = res.data.meals;
                 console.log(allMeal);
                 this.setState({
-                    activeMeal: allMeal
+                    activeMeal: allMeal,
+                    loading: true
                 })
             })
             .catch((err) => {
@@ -56,26 +58,6 @@ class MealPage extends React.Component{
                             ingredient18={oneMeal.strIngredient18}
                             ingredient19={oneMeal.strIngredient19}
                             ingredient20={oneMeal.strIngredient20}
-                            measure1={oneMeal.strMeasure1}
-                            measure2={oneMeal.strMeasure2}
-                            measure3={oneMeal.strMeasure3}
-                            measure4={oneMeal.strMeasure4}
-                            measure5={oneMeal.strMeasure5}
-                            measure6={oneMeal.strMeasure6}
-                            measure7={oneMeal.strMeasure7}
-                            measure8={oneMeal.strMeasure8}
-                            measure9={oneMeal.strMeasure9}
-                            measure10={oneMeal.strMeasure10}
-                            measure11={oneMeal.strMeasure11}
-                            measure12={oneMeal.strMeasure12}
-                            measure13={oneMeal.strMeasure13}
-                            measure14={oneMeal.strMeasure14}
-                            measure15={oneMeal.strMeasure15}
-                            measure16={oneMeal.strMeasure16}
-                            measure17={oneMeal.strMeasure17}
-                            measure18={oneMeal.strMeasure18}
-                            measure19={oneMeal.strMeasure19}
-                            measure20={oneMeal.strMeasure20}
                             directions={oneMeal.strInstructions}
                             vidLink={oneMeal.strYoutube}
                        />

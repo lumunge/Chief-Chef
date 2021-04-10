@@ -1,4 +1,5 @@
 import axios from 'axios';
+import Spinner from 'react-bootstrap/Spinner';
 import React, {useState, useEffect} from 'react';
 import '../index.css';
 import Meals from './Meals';
@@ -8,6 +9,7 @@ const Main = () => {
     const [meals, setMeals] = useState([]);
     const [query, setQuery] = useState('chicken');
     const [search, setSearch] = useState('');
+    const [loading, setLoading] = useState(false);
 
     useEffect(() => {
         getMeals();
@@ -20,6 +22,7 @@ const Main = () => {
                 const allMeals = res.data.meals;
                 setMeals(allMeals);
                 console.log(allMeals);
+                setLoading(true)
             })
             .catch(err => {
                 console.log(err);
@@ -47,6 +50,10 @@ const Main = () => {
                     <button type="submit" className="btn btn-outline-primary">Search</button>
                 </form>
             </div>
+
+
+        {loading ? (
+        
         <div className="meals">
             {meals.map(meal => (
                 <div>
@@ -61,6 +68,9 @@ const Main = () => {
                 </div>
             ))}
         </div>
+        ) : (
+        <div className="spinner"><Spinner animation="border" /></div>
+        )}
         </>
     )
 }
