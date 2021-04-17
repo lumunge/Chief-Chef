@@ -11,6 +11,7 @@ const Navbar = () => {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarResponsive">
                     <ul className="navbar-nav ml-auto">
+                        {/* routes to components */}
                     <Link to="/"><li className="nav-item">Home</li></Link>
                     <Link to="/about"><li className="nav-item">About</li></Link>
                     </ul>

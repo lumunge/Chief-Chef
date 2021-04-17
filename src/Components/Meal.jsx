@@ -1,6 +1,6 @@
 import React from 'react';
 
-
+// getting single meal properties
 const Meal = ({
     title,
     origin,
@@ -30,6 +30,7 @@ const Meal = ({
 
 
     return(
+        // placing properties in jsx syntax
         <div className="meal-container container-fluid">
             <h1>{origin} - {title}</h1>
         <div className="single-meal">

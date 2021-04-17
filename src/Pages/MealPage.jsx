@@ -4,11 +4,13 @@ import Meal from '../Components/Meal';
 import Navbar from '../Components/Navbar';
 
 class MealPage extends React.Component{
+    // setting initial states
     state={
         activeMeal: [],
         loading: false
     }
 
+    // when page renders get the single meal data and render it
     componentDidMount = () => {
         const mealId = this.props.location.state.meal;
         axios.get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealId}`)
