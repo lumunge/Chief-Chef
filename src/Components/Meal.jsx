@@ -65,6 +65,11 @@ const Meal = ({
                         <h4>Directions</h4>
                         <p>{directions}</p>
                     </div>
+                    <div className="videoWrapper">
+                        <iframe width="420" height="315" title={title}
+                            src={`https://www.youtube.com/embed/${vidLink.slice(-11)}`}>
+				        </iframe>
+                    </div>
                     <a href={vidLink} target="_blank" rel="noopener noreferrer">Video Tutorial</a>
                 </div>
         </div>

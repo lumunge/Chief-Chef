@@ -10,7 +10,6 @@ const Meals = ({mealId, image, title, origin}) => {
                 <p className="font-weight-bold pt-4 text-dark">{origin} - {title}</p>
                 <Link to={{
                         pathname: `/meal/:${mealId}`,
-                        state: { meal: mealId}
                     }}> 
                 <button className="meal-btn">
                     How To 
