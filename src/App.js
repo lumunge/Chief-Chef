@@ -9,7 +9,6 @@ import "./App.css";
 export default function App() {
 	return (
 		<div className="App">
-			<Home />
 			<BrowserRouter>
 				<Switch>
 					<Route path="/" exact component={Home} />
@@ -18,6 +17,8 @@ export default function App() {
 					<Route path="/recipe" component={Recipe} />
 				</Switch>
 			</BrowserRouter>
+			<Home />
+			<h1>Check out</h1>
 		</div>
 	);
 }
