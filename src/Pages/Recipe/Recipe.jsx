@@ -1,8 +1,8 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
-import Navbar from '../Components/Navbar';
-import '../App.css';
-import Footer from '../Components/Footer';
+import Navbar from '../../Components/Navbar';
+import Footer from '../../Components/Footer';
+import './Recipe.css';
 
 const MealPage = (props) => {
     const [meal, setMeal] = useState([]);
@@ -45,7 +45,7 @@ const MealPage = (props) => {
                                <h4>Category: <span className="subtitle">{single.strCategory} </span></h4>
                                <h4>Affiliation: <span className="subtitle"> {single.strArea}</span></h4>
                                <h4>Ingredients: </h4>
-                               <ul className="ingredients">
+                               <ul className="ingredients card">
                                    {ingredients.map((ingredient) => (
                                        <li className="list">{ingredient}</li>
                                    ))}

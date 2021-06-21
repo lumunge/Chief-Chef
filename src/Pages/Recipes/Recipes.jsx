@@ -1,15 +1,15 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from '../Navbar';
-import Footer from '../Footer';
-import "./Meals.css";
+import Navbar from '../../Components/Navbar';
+import Footer from '../../Components/Footer';
+import "./Recipes.css";
 
 
 const Meals = () => {
 
     const [meals, setMeals] = useState([]);
-    const [user, setUser] = useState(JSON.parse(localStorage.getItem("profile")));
+    const [user] = useState(JSON.parse(localStorage.getItem("profile")));
     const [search, setSearch] = useState('');
 
 
