@@ -4,36 +4,16 @@ const Footer = () => {
     return(
         <>
          <footer className="footer text-center">
-            <div className="container pt-4">
-                <div className="row">
-                    <div className="col-lg-4 mb-5 mb-lg-0">
-                        <h4 className="text-uppercase mb-4">Location</h4>
-                        <p className="lead mb-0">
-                            nairobi
-                            <br />
-                            kenya
-                        </p>
-                    </div>
-                    <div className="col-lg-4 mb-5 mb-lg-0">
+                    <div>
                         <h4 className="text-uppercase mb-4">Around the Web</h4>
-                        <a className="btn btn-outline-primary btn-social mx-1" href="#!"><i className="fab fa-fw fa-facebook-f"></i></a>
-                        <a className="btn btn-outline-primary btn-social mx-1" href="#!"><i className="fab fa-fw fa-twitter"></i></a>
-                        <a className="btn btn-outline-primary btn-social mx-1" href="#!"><i className="fab fa-fw fa-linkedin-in"></i></a>
-                        <a className="btn btn-outline-primary btn-social mx-1" href="#!"><i className="fab fa-fw fa-dribbble"></i></a>
+                        <a className="btn btn-outline-primary btn-social mx-1" href="https://stackoverflow.com/users/16274859/lumunge"><i className="fab fa-stack-overflow"></i></a>
+                        <a className="btn btn-outline-primary btn-social mx-1" href="https://github.com/lumungep12"><i className="fab fa-github"></i></a>
+                        <a className="btn btn-outline-primary btn-social mx-1" href="linkedin.com/in/lumunge-erick-b3521b19a"><i className="fab fa-fw fa-linkedin-in"></i></a>
+                        <a className="btn btn-outline-primary btn-social mx-1" href="https://www.lumunge.dev"><i className="fab fa-fw fa-dribbble"></i></a>
                     </div>
-                    <div className="col-lg-4">
-                        <h4 className="text-uppercase mb-4">About Recipe App</h4>
-                        <p className="lead mb-0">
-                            This app is a free to use  
-                            <a href="/home"> foodrecipeapp</a>
-                            .
-                        </p>
-                    </div>
-                </div>
-            </div>
         </footer>
         <div className="copyright py-4 text-center text-white">
-            <div className="container text-dark"><small>Copyright © Your rectfoodapp 2020</small></div>
+            <div className="container text-dark"><small>created by <a href="https://github.com/lumungep12">lumunge</a></small></div>
         </div>
         </>
     )
