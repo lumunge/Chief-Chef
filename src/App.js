@@ -9,7 +9,7 @@ import "./App.css";
 export default function App() {
 	return (
 		<div className="App">
-			<h1>It is working</h1>
+			<Home />
 			<BrowserRouter>
 				<Switch>
 					<Route path="/" exact component={Home} />
