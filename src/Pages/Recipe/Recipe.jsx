@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 import Navbar from '../../Components/Navbar';
 import Footer from '../../Components/Footer';
 import './Recipe.css';
@@ -7,6 +8,7 @@ import './Recipe.css';
 const MealPage = (props) => {
     const [meal, setMeal] = useState([]);
     const [singleMeal, setSingleMeal] = useState([]);
+    const [user] = useState(JSON.parse(localStorage.getItem("profile")));
 
     const pathname = props.location.pathname;
     const mealId = pathname.substr(9);
@@ -32,10 +34,11 @@ const MealPage = (props) => {
         }
     }
 
+
     return(
         <>
         <Navbar/>
-        <br /><br /> <br />
+        {user ? (
            <div className="mealpage">
                {meal.map((single) => (
                    <div className="single-meal">
@@ -64,6 +67,15 @@ const MealPage = (props) => {
                </div>
                ))}
            </div>
+           ) : (
+            <div className="defaultContainer">
+            <div className="defaultContent">
+                <h1>Seems you are not signed in </h1>
+                <small>Sign in Here</small>
+                <div className="signup"> <Link to="/"> <i className="fas fa-sign-in-alt"></i> </Link></div>
+            </div>
+        </div>
+           )}
            <Footer/>
         </>
     )

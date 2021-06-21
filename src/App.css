@@ -19,14 +19,14 @@ body {
 }
 .navRight {
 	display: flex;
+	justify-content: space-evenly;
 }
-
 .nav-item:hover {
 	text-decoration: none !important;
 	color: #fff;
 }
 .profile {
-	color: #3498db;
+	color: #f4d03f;
 	font-weight: 600;
 }
 .logout {
@@ -34,6 +34,7 @@ body {
 	border: none;
 	font-size: 1.2rem;
 	color: #e74c3c;
+	padding-right: 1.5rem;
 }
 
 /* ABOUT PAGE STYLING */
@@ -44,7 +45,3 @@ body {
 	text-align: center;
 }
 /* END ABOUT PAGE STYLING */
-
-/* SINGLE MEAL STYLING */
-
-/* RESPONSIVE DESIGN */
