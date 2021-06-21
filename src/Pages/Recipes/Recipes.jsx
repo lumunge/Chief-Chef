@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-import { Spinner } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Navbar from "../../Components/Navbar";
 import Footer from "../../Components/Footer";
@@ -8,7 +7,6 @@ import "./Recipes.css";
 
 const Meals = () => {
 	const [meals, setMeals] = useState([]);
-	const [loading, setLoading] = useState(true);
 	const [user] = useState(JSON.parse(localStorage.getItem("profile")));
 	const [search, setSearch] = useState("");
 
@@ -21,7 +19,6 @@ const Meals = () => {
 				const { meals } = res.data;
 				if (meals) {
 					setMeals(meals);
-					setLoading(!loading);
 				}
 			})
 			.catch((error) => {
@@ -43,11 +40,6 @@ const Meals = () => {
 							onChange={(e) => setSearch(e.target.value)}
 						/>
 					</div>
-					{loading ? (
-						<div className="spinner">
-							<Spinner animation="grow" />
-						</div>
-					) : (
 						<div className="singleMeals">
 							{meals.map((single) => (
 								<div key={single.idMeal} className="mealCard">
@@ -75,7 +67,6 @@ const Meals = () => {
 								</div>
 							))}
 						</div>
-					)}
 				</div>
 			) : (
 				<div className="defaultContainer">
