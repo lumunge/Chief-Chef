@@ -1,4 +1,5 @@
 import {useState, useEffect} from 'react';
+import {Spinner} from 'react-bootstrap';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
 import Navbar from '../../Components/Navbar';
@@ -7,6 +8,7 @@ import './Recipe.css';
 
 const MealPage = (props) => {
     const [meal, setMeal] = useState([]);
+    const [loading, setLoading] = useState(true);
     const [singleMeal, setSingleMeal] = useState([]);
     const [user] = useState(JSON.parse(localStorage.getItem("profile")));
 
@@ -19,6 +21,7 @@ const MealPage = (props) => {
                 const {meals} = res.data;
                 setMeal(meals);
                 setSingleMeal(meals[0]);
+                setLoading(!loading);
             })
             .catch((err) => {
                 console.log(err);
@@ -40,6 +43,12 @@ const MealPage = (props) => {
         <Navbar/>
         {user ? (
            <div className="mealpage">
+               {loading ? (
+               <div className="spinner">
+                    <Spinner animation="grow"/>
+               </div>
+               ) : (
+                   <>
                {meal.map((single) => (
                    <div className="single-meal">
                    <div className="mealContainer">
@@ -66,6 +75,8 @@ const MealPage = (props) => {
                </div>
                </div>
                ))}
+               </>
+               )}
            </div>
            ) : (
             <div className="defaultContainer">

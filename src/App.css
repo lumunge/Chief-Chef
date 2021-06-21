@@ -9,6 +9,7 @@ body {
 .spinner {
 	display: flex;
 	justify-content: center;
+	padding: 1rem 0;
 }
 .nav-item {
 	margin-right: 4rem;
