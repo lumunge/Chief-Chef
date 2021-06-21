@@ -38,10 +38,9 @@ const Home = () => {
                 <small>Click on google to begin</small>
             </div>
             <div className="buttonContainer">
-                <button onClick={() => SignIn(GoogleProvider)}><i class="fab fa-google"></i></button>
+                <button className="google" onClick={() => SignIn(GoogleProvider)}><i class="fab fa-google"></i></button>
             </div>
         </div>
-        <br />
         <Footer/>
         </>
     )
