@@ -54,7 +54,7 @@ authentication.
 
 ### HOSTED @
 
-    Working on it...
+    [Chief-Chef-Recipes](https://lumungep12.github.io/FoodRecipesApp/#/)
 
 ### SETUP
 
