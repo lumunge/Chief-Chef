@@ -1,9 +1,11 @@
 import {useState, useEffect} from 'react';
 import {useHistory} from 'react-router-dom';
-import firebase from '../Config/FirebaseConfig';
-import {GoogleProvider} from '../Config/AuthMethods';
-import Auth from '../Services/Auth';
-import Navbar from '../Components/Navbar';
+import firebase from '../../Config/FirebaseConfig';
+import {GoogleProvider} from '../../Config/AuthMethods';
+import Auth from '../../Services/Auth';
+import Navbar from '../../Components/Navbar';
+import Footer from '../../Components/Footer';
+import './Home.css';
 
 const Home = () => {
 
@@ -30,10 +32,17 @@ const Home = () => {
     return(
         <>
         <Navbar/>
-        <br /><br /><br />
-        <div>
-            <button onClick={() => SignIn(GoogleProvider)}>Sign In With Google</button>
+        <div className="home">
+            <div className="title">
+                <h3 >Hello Friend, Want To try Some New Recipes ?</h3>
+                <small>Click on google to begin</small>
+            </div>
+            <div className="buttonContainer">
+                <button onClick={() => SignIn(GoogleProvider)}><i class="fab fa-google"></i></button>
+            </div>
         </div>
+        <br />
+        <Footer/>
         </>
     )
 }

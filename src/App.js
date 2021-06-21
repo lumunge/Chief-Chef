@@ -4,7 +4,7 @@ import "./App.css";
 import MealPage from "./Pages/MealPage";
 import About from "./Pages/About";
 import Meals from "./Components/Meals";
-import Home from "./Pages/Home";
+import Home from "./Pages/Home/Home";
 
 export default function App() {
 	return (
