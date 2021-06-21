@@ -20,7 +20,7 @@ authentication.
 
 ### FEATURES
 
-    * Search For Meal
+    * Real time on page recipe searching
     * Get Recipe Information (name, country of origin, image, method of preparation video tutorial)
     * Google Authentication
     * Mobile Responsive
