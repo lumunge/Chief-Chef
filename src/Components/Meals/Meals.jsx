@@ -1,9 +1,10 @@
 import axios from 'axios';
 import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
-import Navbar from './Navbar';
-import Footer from './Footer';
-import '../App.css';
+import Navbar from '../Navbar';
+import Footer from '../Footer';
+import '../../App.css';
+import "./Meals.css";
 
 
 const Meals = () => {
@@ -30,7 +31,6 @@ const Meals = () => {
     return(
         <>
         <Navbar/>
-        <br /><br /><br />
         {user ? (
             <div className="mealsContainer">
                  <div className="searchBar">
@@ -53,8 +53,12 @@ const Meals = () => {
                 </div>
             </div>
             ) : (
-                <div>
-                    <h1>Sign In <Link to="/"> Here</Link> To View Recipes</h1>
+                <div className="defaultContainer">
+                    <div className="defaultContent">
+                        <h1>Seems you are not signed in </h1>
+                        <small>Sign in Here</small>
+                        <div className="signup"> <Link to="/"> <i className="fas fa-sign-in-alt"></i> </Link></div>
+                    </div>
                 </div>
             )}
             <Footer/>

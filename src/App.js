@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MealPage from "./Pages/MealPage";
 import About from "./Pages/About";
-import Meals from "./Components/Meals";
+import Meals from "./Components/Meals/Meals";
 import Home from "./Pages/Home/Home";
 
 export default function App() {
