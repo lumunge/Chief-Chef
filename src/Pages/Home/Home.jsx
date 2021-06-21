@@ -1,4 +1,4 @@
-import {useState, useEffect} from 'react';
+import {useEffect} from 'react';
 import {useHistory} from 'react-router-dom';
 import firebase from '../../Config/FirebaseConfig';
 import {GoogleProvider} from '../../Config/AuthMethods';
@@ -9,8 +9,8 @@ import './Home.css';
 
 const Home = () => {
 
-    const [user, setUser] = useState("");
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    // const [user, setUser] = useState("");
+    // const [isLoggedIn, setIsLoggedIn] = useState(false);
     const history = useHistory();
 
     const SignIn = async (provider) => {
