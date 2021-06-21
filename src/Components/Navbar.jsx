@@ -4,7 +4,7 @@ import firebase from "../Config/FirebaseConfig";
 import { Link } from "react-router-dom";
 import "../App.css";
 const Navbar = () => {
-	const [user, setUser] = useState(
+	const [user] = useState(
 		JSON.parse(localStorage.getItem("profile"))
 	);
 	const history = useHistory();

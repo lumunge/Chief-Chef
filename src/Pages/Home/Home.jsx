@@ -8,9 +8,6 @@ import Footer from '../../Components/Footer';
 import './Home.css';
 
 const Home = () => {
-
-    // const [user, setUser] = useState("");
-    // const [isLoggedIn, setIsLoggedIn] = useState(false);
     const history = useHistory();
 
     const SignIn = async (provider) => {
