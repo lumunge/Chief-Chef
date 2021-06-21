@@ -17,8 +17,6 @@ export default function App() {
 					<Route path="/recipe" component={Recipe} />
 				</Switch>
 			</BrowserRouter>
-			<Home />
-			<h1>Check out</h1>
 		</div>
 	);
 }
