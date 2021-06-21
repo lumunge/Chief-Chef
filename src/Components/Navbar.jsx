@@ -23,23 +23,33 @@ const Navbar = () => {
         <nav className="navbar navbar-expand-lg bg-dark text-uppercase fixed-top" id="mainNav">
             <div className="container">
                 <Link to="/"><span className="navbar-brand text-light js-scroll-trigger">Chief Chef</span></Link>
-                <button className="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <i className="fas fa-bars"></i>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarResponsive">
-                    <ul className="navbar-nav ml-auto">
-                    <Link to="/recipes"><li className="nav-item">Recipes</li></Link>
-                    <Link to="/about"><li className="nav-item">About</li></Link>
-                    </ul>
-                </div>
-                {user ? (
+                <div className="navRight">
+                    <div>
+                    {user ? (
                     <>
-                    <p>Welcome {user}</p>
-                    <button onClick={logout}>Logout</button>
+                    <span className="profile">{user} &nbsp; <button className="logout" onClick={logout}><i class="fas fa-power-off"></i></button></span>
                     </>
                 ) : (
                     null
                 )}
+                    </div>
+                <button className="navbar-toggler navbar-toggler-right text-uppercase font-weight-bold text-white rounded ml-4" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <i className="fas fa-bars"></i>
+                </button>
+                </div>
+                <div className="collapse navbar-collapse" id="navbarResponsive">
+                    <div className="navbar-nav ml-auto">
+                    <Link to="/recipes"><span className="nav-item">Recipes</span></Link>
+                    <Link to="/about"><span className="nav-item">About</span></Link>
+                    </div>
+                </div>
+                {/* {user ? (
+                    <>
+                    <span className="profile">{user} &nbsp; <button className="logout" onClick={logout}><i class="fas fa-power-off"></i></button></span>
+                    </>
+                ) : (
+                    null
+                )} */}
             </div>
         </nav>
     )

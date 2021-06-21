@@ -15,6 +15,25 @@ body {
 	color: #f4d03f;
 	font-weight: 600;
 	letter-spacing: 2px;
+	text-decoration: none !important;
+}
+.navRight {
+	display: flex;
+}
+
+.nav-item:hover {
+	text-decoration: none !important;
+	color: #fff;
+}
+.profile {
+	color: #3498db;
+	font-weight: 600;
+}
+.logout {
+	background: transparent;
+	border: none;
+	font-size: 1.2rem;
+	color: #e74c3c;
 }
 .searchBar {
 	display: flex;

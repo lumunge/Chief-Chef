@@ -25,12 +25,17 @@ authentication.
     * Google Authentication
     * Mobile Responsive
 
-### PROJECT SCREENSHOT
+### PROJECT VERSION 1
 
 -   Home page
     ![Screenshot_20210410_171423](https://user-images.githubusercontent.com/58906058/114272672-9b3ed680-9a06-11eb-82ab-2b64ff1223bf.png)
 -   Details Page
     ![Screenshot_20210410_171405](https://user-images.githubusercontent.com/58906058/114272674-a0038a80-9a06-11eb-9322-1d49630aee9b.png)
+
+### PROJECT VERSION 1.1
+
+-   Home Page coming soon
+-   Meals Default Page coming soon
 
 ### SETUP
 
