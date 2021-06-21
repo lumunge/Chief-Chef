@@ -34,8 +34,27 @@ authentication.
 
 ### PROJECT VERSION 1.1
 
--   Home Page coming soon
--   Meals Default Page coming soon
+-   Home Page -> Authenticate with google
+
+    ![Screenshot_20210621_065727](https://user-images.githubusercontent.com/58906058/122705574-8fad2e80-d245-11eb-9e85-58c7eec5b269.png)
+
+-   Default Page -> Check authentication user authentication status
+
+    ![Screenshot_20210621_065745](https://user-images.githubusercontent.com/58906058/122705805-f4688900-d245-11eb-9749-5c26f72e3a0a.png)
+
+-   Meal Page -> Show all meals with search functionalities
+
+    ![Screenshot_20210621_065833](https://user-images.githubusercontent.com/58906058/122705843-064a2c00-d246-11eb-9854-03ea3e61bcab.png)
+
+-   Single Recipe -> Show methods of preparations of a single meal
+
+    ![Screenshot_20210621_065858](https://user-images.githubusercontent.com/58906058/122705921-2ed22600-d246-11eb-9d1d-c01311190706.png)
+
+    ![Screenshot_20210621_065907](https://user-images.githubusercontent.com/58906058/122705927-309be980-d246-11eb-941a-2b28153719a4.png)
+
+### HOSTED @
+
+    Working on it...
 
 ### SETUP
 
