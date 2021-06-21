@@ -1,6 +1,5 @@
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
 import MealPage from "./Pages/MealPage";
 import About from "./Pages/About";
 import Meals from "./Components/Meals/Meals";

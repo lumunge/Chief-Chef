@@ -3,7 +3,6 @@ import {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../Navbar';
 import Footer from '../Footer';
-import '../../App.css';
 import "./Meals.css";
 
 
@@ -66,4 +65,5 @@ const Meals = () => {
     )
 }
 export default Meals;
+
 
