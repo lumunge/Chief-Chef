@@ -17,7 +17,6 @@ const Home = () => {
     useEffect(() => {
         firebase.auth().onAuthStateChanged((user) => {
             if(user){
-                localStorage.setItem("profile", JSON.stringify(user.displayName));
                 history.push("/recipes");
             }else{
                 console.log("Please Sign Up");
