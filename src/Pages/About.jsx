@@ -9,7 +9,7 @@ const About = () => {
             <br/>
             <br/>
             <br/>
-            <h1>About Food Recipes App</h1>
+            <h1>About This Application</h1>
             <div>
                 <p>A free web tool that enables you to search for recipes for over 1000+ foods and their ingredients, preparation methods and country of origin.</p>
             </div>
