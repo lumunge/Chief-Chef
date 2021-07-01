@@ -11,14 +11,13 @@ export default function App() {
 	return (
 		<div className="App">
 			<HashRouter>
-				<h1>Page Here</h1>
-				{/* <Navbar />
+				<Navbar />
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/recipes" component={Recipes} />
 					<Route path="/about" component={About} />
 					<Route path="/recipe" component={Recipe} />
-				</Switch> */}
+				</Switch>
 			</HashRouter>
 		</div>
 	);
