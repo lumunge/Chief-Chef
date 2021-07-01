@@ -10,8 +10,6 @@ import Navbar from "./Components/Navbar";
 export default function App() {
 	return (
 		<div className="App">
-			<h1>Welcome Home</h1>
-
 			<HashRouter>
 				<Navbar />
 				<Switch>
