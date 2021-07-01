@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Recipe from "./Pages/Recipe/Recipe";
 import About from "./Pages/About";
@@ -12,7 +12,7 @@ export default function App() {
 		<div className="App">
 			<h1>Welcome Home</h1>
 
-			<BrowserRouter>
+			<HashRouter>
 				<Navbar />
 				<Switch>
 					<Route path="/" exact component={Home} />
@@ -20,7 +20,7 @@ export default function App() {
 					<Route path="/about" component={About} />
 					<Route path="/recipe" component={Recipe} />
 				</Switch>
-			</BrowserRouter>
+			</HashRouter>
 		</div>
 	);
 }
