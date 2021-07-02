@@ -10,7 +10,7 @@ const MealPage = (props) => {
     const [meal, setMeal] = useState([]);
     const [loading, setLoading] = useState(true);
     const [singleMeal, setSingleMeal] = useState([]);
-    const [user] = useState(JSON.parse(localStorage.getItem("profile")));
+    const [user] = useState(JSON.parse(localStorage.getItem("user")));
 
     const pathname = props.location.pathname;
     const mealId = pathname.substr(9);
