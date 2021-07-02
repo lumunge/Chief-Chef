@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/Chief-Chef/static/css/main.ef67c510.chunk.css",
-    "main.js": "/Chief-Chef/static/js/main.f733e6dc.chunk.js",
-    "main.js.map": "/Chief-Chef/static/js/main.f733e6dc.chunk.js.map",
+    "main.js": "/Chief-Chef/static/js/main.fbf52656.chunk.js",
+    "main.js.map": "/Chief-Chef/static/js/main.fbf52656.chunk.js.map",
     "runtime-main.js": "/Chief-Chef/static/js/runtime-main.97cbd03b.js",
     "runtime-main.js.map": "/Chief-Chef/static/js/runtime-main.97cbd03b.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/Chief-Chef/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.4f304694.chunk.js": "/Chief-Chef/static/js/2.4f304694.chunk.js",
-    "static/js/2.4f304694.chunk.js.map": "/Chief-Chef/static/js/2.4f304694.chunk.js.map",
+    "static/js/2.08309843.chunk.js": "/Chief-Chef/static/js/2.08309843.chunk.js",
+    "static/js/2.08309843.chunk.js.map": "/Chief-Chef/static/js/2.08309843.chunk.js.map",
     "index.html": "/Chief-Chef/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/Chief-Chef/static/css/2.4c97ca4f.chunk.css.map",
     "static/css/main.ef67c510.chunk.css.map": "/Chief-Chef/static/css/main.ef67c510.chunk.css.map",
-    "static/js/2.4f304694.chunk.js.LICENSE.txt": "/Chief-Chef/static/js/2.4f304694.chunk.js.LICENSE.txt"
+    "static/js/2.08309843.chunk.js.LICENSE.txt": "/Chief-Chef/static/js/2.08309843.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.97cbd03b.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.4f304694.chunk.js",
+    "static/js/2.08309843.chunk.js",
     "static/css/main.ef67c510.chunk.css",
-    "static/js/main.f733e6dc.chunk.js"
+    "static/js/main.fbf52656.chunk.js"
   ]
 }
