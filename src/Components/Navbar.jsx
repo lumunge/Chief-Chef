@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 const Navbar = () => {
 	const [user] = useState(
-		JSON.parse(localStorage.getItem("profile"))
+		JSON.parse(localStorage.getItem("user"))
 	);
 	const history = useHistory();
 
@@ -28,13 +28,8 @@ const Navbar = () => {
 			id="mainNav"
 		>
 			<div className="container">
-				<Link to="/">
-					<span className="navbar-brand text-light js-scroll-trigger">
-						Chief Chef
-					</span>
-				</Link>
 				<div>
-					{user ? <span className="profile">Hey, {user}</span> : null}
+					{user ? <span className="profile">Hey, {user.displayName}</span> : null}
 				</div>
 				<div>
 					<button

@@ -7,7 +7,7 @@ import "./Recipes.css";
 
 const Meals = () => {
 	const [meals, setMeals] = useState([]);
-	const [user] = useState(JSON.parse(localStorage.getItem("profile")));
+	const [user] = useState(JSON.parse(localStorage.getItem("user")));
 	const [search, setSearch] = useState("");
 
 	useEffect(() => {
