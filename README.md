@@ -53,7 +53,7 @@ authentication.
     ![Screenshot_20210621_065907](https://user-images.githubusercontent.com/58906058/122705927-309be980-d246-11eb-941a-2b28153719a4.png)
 
 ### HAVE A LOOK HERE
-coming soon...
+[Chief-Chef-App](https://lumungep12.github.io/Chief-Chef/)
 
 ### SETUP
 
