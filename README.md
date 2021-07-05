@@ -53,10 +53,11 @@ authentication.
     ![Screenshot_20210621_065907](https://user-images.githubusercontent.com/58906058/122705927-309be980-d246-11eb-941a-2b28153719a4.png)
 
 ### HAVE A LOOK HERE
-[Chief-Chef-App](https://lumungep12.github.io/Chief-Chef/)
+[Chief-Chef-App](https://lumunge.github.io/Chief-Chef/)
 
 ### SETUP
 
-    * git clone https://github.com/lumungep12/FoodRecipesApp.git
+    * git clone https://github.com/lumunge/Chief-Chef.git
+    * Create a google account and get the required firebase credentials to implement in your app
     * npm i
     * npm start
