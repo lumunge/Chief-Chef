@@ -13,6 +13,7 @@ export default function App() {
 		<div className="App">
 			<BrowserRouter>
 				<Navbar />
+				<h1>Home Here</h1>
 				<Switch>
 					<Route path="/" exact component={Home} />
 					<Route path="/recipes" component={Recipes} />
