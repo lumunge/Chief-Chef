@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Recipe from "./Pages/Recipe/Recipe";
 import About from "./Pages/About";
@@ -11,7 +11,7 @@ import Footer from "./Components/Footer";
 export default function App() {
 	return (
 		<div className="App">
-			<BrowserRouter>
+			<HashRouter>
 				<Navbar />
 				<br />
 				<br />
@@ -26,7 +26,7 @@ export default function App() {
 					<Route path="/about" component={About} />
 					<Route path="/recipe" component={Recipe} />
 				</Switch>
-			</BrowserRouter>
+			</HashRouter>
 			<Footer />
 		</div>
 	);
