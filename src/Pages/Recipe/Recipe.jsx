@@ -26,6 +26,7 @@ const MealPage = (props) => {
             .catch((err) => {
                 console.log(err);
             })
+            // eslint-disable-next-line
     }, []);
 
     const ingredients = [];

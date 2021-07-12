@@ -22,6 +22,7 @@ const Home = () => {
 				console.log("Please Sign Up");
 			}
 		});
+		// eslint-disable-next-line
 	}, []);
 
 	return (
