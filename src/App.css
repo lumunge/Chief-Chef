@@ -40,8 +40,10 @@ body {
 
 /* ABOUT PAGE STYLING */
 .about {
+	height: 50vh;
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	margin: 5rem;
 	text-align: center;
 }
