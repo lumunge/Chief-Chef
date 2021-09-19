@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Components/Navbar';
 
 const About = () => {
     return(
@@ -7,7 +6,7 @@ const About = () => {
             <br/>
             <br/>
             <br/>
-            <h1>About This Application</h1>
+            <h1>About This App</h1>
             <div>
                 <p>A free web tool that enables you to search for recipes for over 1000+ foods and their ingredients, preparation methods and country of origin.</p>
             </div>
