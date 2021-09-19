@@ -2,8 +2,6 @@ import {useState, useEffect} from 'react';
 import {Spinner} from 'react-bootstrap';
 import axios from 'axios';
 import {Link} from 'react-router-dom';
-import Navbar from '../../Components/Navbar';
-import Footer from '../../Components/Footer';
 import './Recipe.css';
 
 const MealPage = (props) => {
@@ -41,7 +39,6 @@ const MealPage = (props) => {
 
     return(
         <>
-        <Navbar/>
         {user ? (
            <div className="mealpage">
                {loading ? (
@@ -88,7 +85,6 @@ const MealPage = (props) => {
             </div>
         </div>
            )}
-           <Footer/>
         </>
     )
 }

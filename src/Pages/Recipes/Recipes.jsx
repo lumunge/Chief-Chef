@@ -1,8 +1,6 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../../Components/Navbar";
-import Footer from "../../Components/Footer";
 import "./Recipes.css";
 
 const Meals = () => {
@@ -28,7 +26,6 @@ const Meals = () => {
 
 	return (
 		<>
-			<Navbar />
 			{user ? (
 				<div className="mealsContainer">
 					<div className="searchBar">

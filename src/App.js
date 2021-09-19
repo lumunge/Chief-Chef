@@ -19,8 +19,8 @@ export default function App() {
 					<Route path="/about" component={About} />
 					<Route path="/recipe" component={Recipe} />
 				</Switch>
+				<Footer />
 			</HashRouter>
-			<Footer />
 		</div>
 	);
 }
