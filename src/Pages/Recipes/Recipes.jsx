@@ -83,7 +83,6 @@ const Meals = () => {
 					</div>
 				</div>
 			)}
-			<Footer />
 		</>
 	);
 };
