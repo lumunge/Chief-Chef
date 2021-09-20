@@ -1,26 +1,26 @@
 import { useState } from "react";
-import { useHistory } from "react-router-dom";
-import firebase from "../Config/FirebaseConfig";
+// import { useHistory } from "react-router-dom";
+// import firebase from "../Config/FirebaseConfig";
 import { Link } from "react-router-dom";
 import "../App.css";
 const Navbar = () => {
 	const [user] = useState(
 		JSON.parse(localStorage.getItem("user"))
 	);
-	const history = useHistory();
+	// const history = useHistory();
 
-	const logout = () => {
-		firebase
-			.auth()
-			.signOut()
-			.then(() => {
-				localStorage.clear();
-				history.push("/");
-			})
-			.catch((error) => {
-				console.log(error);
-			});
-	};
+	// const logout = () => {
+	// 	firebase
+	// 		.auth()
+	// 		.signOut()
+	// 		.then(() => {
+	// 			localStorage.clear();
+	// 			history.push("/");
+	// 		})
+	// 		.catch((error) => {
+	// 			console.log(error);
+	// 		});
+	// };
 
 	return (
 		<nav
