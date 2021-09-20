@@ -54,13 +54,13 @@ const Navbar = () => {
 						<span className="nav-item">About</span>
 					</Link>
 					<div>
-						{user ? (
+						{/* {user ? (
 							<>
 								<button className="logout" onClick={logout}>
 									<i class="fas fa-power-off"></i>
 								</button>
 							</>
-						) : null}
+						) : null} */}
 					</div>
 				</div>
 			</div>

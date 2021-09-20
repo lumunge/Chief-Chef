@@ -53,9 +53,9 @@ const MealPage = (props) => {
                        <div className="mealLeft">
                                 <img src={single.strMealThumb} alt={single.strMeal} />
                                <h4>Category: <span className="subtitle">{single.strCategory} </span></h4>
-                               <h4>Affiliation: <span className="subtitle"> {single.strArea}</span></h4>
-                               <h4>Ingredients: </h4>
+                               <h4>Origin: <span className="subtitle"> {single.strArea}</span></h4>
                                <ul className="ingredients card">
+                               <h4>Ingredients: </h4>
                                    {ingredients.map((ingredient) => (
                                        <li className="list">{ingredient}</li>
                                    ))}

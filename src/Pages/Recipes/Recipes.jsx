@@ -32,7 +32,7 @@ const Meals = () => {
 						<input
 							type="text"
 							autoFocus
-							placeholder="eg beef, pork, dessert, pasta..."
+							placeholder="eg; beef, pork, pasta..."
 							value={search}
 							onChange={(e) => setSearch(e.target.value)}
 						/>
